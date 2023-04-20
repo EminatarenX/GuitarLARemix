@@ -1,0 +1,19 @@
+import Posts from "./posts"
+
+export default function ListadoPosts({posts}) {
+  return (
+    <>
+    <h2 className='heading'>Blog</h2>
+      <div className='blog'>
+        {
+          posts.map(post=> (
+            <Posts
+              key={post.id}
+              post={post}
+            />
+          ))
+        }
+      </div>
+    </>
+  )
+}
