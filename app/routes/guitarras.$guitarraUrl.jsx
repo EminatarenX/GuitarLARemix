@@ -2,7 +2,7 @@ import { getGuitarra } from "../models/guitarras.server"
 import { useLoaderData, useOutletContext } from "@remix-run/react"
 import styles from '../styles/guitarra.css'
 import { useState } from "react"
-import { number } from "mathjs"
+
 
 export async function loader({params}){
 
